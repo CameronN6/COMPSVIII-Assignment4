@@ -39,15 +39,15 @@ Your task is to containerize this existing application using Docker. You need to
 ## Starting the Application
 
 - To build the docker image run the command:
-
+docker build -t compsviii-assignment4 .
 ```bash
-
+docker build -t compsviii-assignment4 .
 ```
 
 - To run your docker container in port 3000 run the command:
-
+docker run -p 3000:3000 compsviii-assignment4
 ```bash
-
+docker run -d -p 3000:3000 compsviii-assignment4
 ```
 
 ## Reflection Question
@@ -92,3 +92,12 @@ docker-assignment/
 ```
 
 Good luck with your Docker containerization!
+
+## Screenshots
+The screenshots below show the application running in the browser and the API status response.
+![Application running](screenshots/Screenshot 2026-10-09 at 8.04.41 PM.png)
+![API status response](sscreenshots/Screenshot 2026-10-09 at 8.05.27 PM.png)
+
+## Reflection
+
+Docker containers are different from virtual machines because containers share the host computer's operating system kernel, while virtual machines include a complete operating system for each virtual machine. Containers are usually faster to start and use fewer resources. A development team might choose containers because they make it easier to package an application with its dependencies and run it consistently across different computers and environments. Docker also makes applications easier to deploy, test, and move between development and production environments.
